@@ -1,38 +1,130 @@
-<button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
-<button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
-<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
-<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
 
-<div id="Privacy Policy" class="tabcontent">
-  <h3>Privacy Policy</h3>
-  <p>Your privacy is important to us. It is Freelancer's policy to respect your privacy regarding any information we may collect from you through our app, My FlutterShare.
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
 
-We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we’re collecting it and how it will be used.
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
 
-We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we’ll protect within commercially acceptable means to prevent loss and theft, as well as unauthorized access, disclosure, copying, use or modification.
+.tablink:hover {
+  background-color: #777;
+}
 
-We don’t share any personally identifying information publicly or with third-parties, except when required to by law.
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
 
-Our app may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites, and cannot accept responsibility or liability for their respective privacy policies.
+#PrivacyPolicy {background-color: red;}
+#TermsofService {background-color: green;}
+#Contact {background-color: orange;}
+#About {background-color: blue;}
+</style>
+</head>
+<body>
 
-You are free to refuse our request for your personal information, with the understanding that we may be unable to provide you with some of your desired services.
+<button class="tablink" onclick="openPage('PrivacyPolicy', this, 'red')" id="defaultOpen">Privacy Policy</button>
+<button class="tablink" onclick="openPage('TermsofService', this, 'green')" >Terms of Service</button>
+<button class="tablink" onclick="openPage('Contact', this, 'orange')">Contact</button>
+<button class="tablink" onclick="openPage('About', this, 'blue')">About</button>
 
-Your continued use of our app will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, feel free to contact us.
-
-This policy is effective as of 4 June 2020.</p>
+<div id="PrivacyPolicy" class="tabcontent">
+  <h2>Privacy Policy</h2>
+<p>Your privacy is important to me. It is, as an indipendent developper, to respect your privacy regarding any information I may collect from you through my app, My FlutterShare.</p>
+<p>I only ask for personal information when I truly need it to provide a service to you. I collect it by fair and lawful means, with your knowledge and consent. I also let you know why I am collecting it and how it will be used.</p>
+<p>I only retain collected information for as long as necessary to provide you with your requested service. What data I store, I’ll protect within commercially acceptable means to prevent loss and theft, as well as unauthorized access, disclosure, copying, use or modification.</p>
+<p>I don’t share any personally identifying information publicly or with third-parties, except when required to by law.</p>
+<p>My app may link to external sites that are not operated by me. Please be aware that I have no control over the content and practices of these sites, and cannot accept responsibility or liability for their respective privacy policies.</p>
+<p>You are free to refuse my request for your personal information, with the understanding that I may be unable to provide you with some of your desired services.</p>
+<p>Your continued use of my app will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how I handle user data and personal information, feel free to contact me.</p>
+<p>This policy is effective as of 4 June 2020.</p>
 </div>
 
-<div id="News" class="tabcontent">
-  <h3>News</h3>
-  <p>Some news this fine day!</p>
+<div id="TermsofService" class="tabcontent">
+<h2>Terms of Service</h2>
+<h3>1. Terms</h3>
+<p>By accessing my app, My FlutterShare, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing My FlutterShare. The materials contained in My FlutterShare are protected by applicable copyright and trademark law.</p>
+<h3>2. Use License</h3>
+<ol type="a">
+   <li>Permission is granted to temporarily download one copy of My FlutterShare per device for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+   <ol type="i">
+       <li>modify or copy the materials;</li>
+       <li>use the materials for any commercial purpose, or for any public display (commercial or non-commercial);</li>
+       <li>attempt to decompile or reverse engineer any software contained in My FlutterShare;</li>
+       <li>remove any copyright or other proprietary notations from the materials; or</li>
+       <li>transfer the materials to another person or "mirror" the materials on any other server.</li>
+   </ol>
+    </li>
+   <li>This license shall automatically terminate if you violate any of these restrictions and may be terminated by me, it's owner and creator, at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.</li>
+</ol>
+<h3>3. Disclaimer</h3>
+<ol type="a">
+   <li>The materials within My FlutterShare are provided on an 'as is' basis. I, as it's owner and creator, makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</li>
+   <li>Further, I do not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its website or otherwise relating to such materials or on any sites linked to My FlutterShare.</li>
+</ol>
+<h3>4. Limitations</h3>
+<p>In no event shall I or my suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use My FlutterShare, even if I or my authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.</p>
+<h3>5. Accuracy of materials</h3>
+<p>The materials appearing in My FlutterShare could include technical, typographical, or photographic errors. I do not warrant that any of the materials on My FlutterShare are accurate, complete or current. I may make changes to the materials contained in My FlutterShare at any time without notice. However I do not make any commitment to update the materials.</p>
+<h3>6. Links</h3>
+<p>I did not reviewed all of the sites linked to my app and I am not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by me of the site. Use of any such linked website is at the user's own risk.</p>
+<h3>7. Modifications</h3>
+<p>I may revise these terms of service for its app at any time without notice. By using My FlutterShare you are agreeing to be bound by the then current version of these terms of service.</p>
+<h3>8. Governing Law</h3>
+<p>These terms and conditions are governed by and construed in accordance with the laws of Switzerland and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.</p>
 </div>
 
 <div id="Contact" class="tabcontent">
   <h3>Contact</h3>
-  <p>Get in touch, or swing by for a cup of coffee.</p>
+  <p>If you have any question or need more informations, please feel free to conact me at this address: 
+  <a href="mailto:independapp@gmail.com">independapp@gmail.com</p>
 </div>
 
 <div id="About" class="tabcontent">
   <h3>About</h3>
-  <p>Who we are and what we do.</p>
+  <p>This page covers the privacy policy and the terms of service of My FlutterShare mobile app available on Google's Play App Store and Apple's App Store.</p>
 </div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
